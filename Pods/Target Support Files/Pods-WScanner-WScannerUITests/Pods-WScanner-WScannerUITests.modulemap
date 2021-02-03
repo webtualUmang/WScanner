@@ -1,0 +1,6 @@
+framework module Pods_WScanner_WScannerUITests {
+  umbrella header "Pods-WScanner-WScannerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

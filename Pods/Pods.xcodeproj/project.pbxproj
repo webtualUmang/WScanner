@@ -1,0 +1,1452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0149A5CC38D6C44CEA492C723BABAEFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		08FE4526DA60E0556D1C28FFE9A7EB9D /* VisionRectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9C3CE2633E02AEA51FC5919A280A4D /* VisionRectangleDetector.swift */; };
+		0A03E642231B3C5EE4DB9DB63356C13B /* Pods-WScanner-WScannerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB4F925FB49A96C5E2548E09D0B7EED /* Pods-WScanner-WScannerUITests-dummy.m */; };
+		0B2480AFBC39044DB0772F85FC85C564 /* rotate.png in Resources */ = {isa = PBXBuildFile; fileRef = C32CD408C0F3804FD1CDC682C19A8B07 /* rotate.png */; };
+		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 14770B3F907879E9E8B0A788C0450291 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13323D6FB9BF3D59C031F6C0B64FB6B7 /* UIImage+SFSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516178452A2ED9F8CF4AD42378F4D453 /* UIImage+SFSymbol.swift */; };
+		150228C89E819187CF7F5AEE4CD0F8F9 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFD31FCB3F0EA16B40AD3BAD1EB3406 /* UIImage+Utils.swift */; };
+		1D2C14A127C91EEB82228658F91BB905 /* CaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F931AAA1766CE88D01A3CD7EBB13AD /* CaptureSession.swift */; };
+		1ED51D5EC3321C59DA528E9685BB27A2 /* flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E96D9A12CD78291385762B16E69BF901 /* flash@2x.png */; };
+		20F1DC68BECA8DBBE40559FD5C56FC65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		24BA0AF7500181E23F9587349E6030DB /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FBFCA072CCF2DD29A7A194880831BA /* UIImage+Orientation.swift */; };
+		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73C3690E85AA869B9A69B268ECFBA7CC /* SVProgressHUD.bundle */; };
+		291E87B13688A71018326C55C1FB46B0 /* QuadrilateralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92175FBF29E4A59CB18D4A92C33F1816 /* QuadrilateralView.swift */; };
+		2A1131A9102C6416763994F8D216CBC9 /* EditImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277F71FEE5B74971DCAB1151B1E5F4CE /* EditImageViewController.swift */; };
+		2C0EE8303E49B03464F7F97D294920C0 /* Quadrilateral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9855BE21699C0367DBAE60EB6483D4 /* Quadrilateral.swift */; };
+		2DED17282AE1FF78C347E8D7C99E4E04 /* EditScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB81DC9309C2D256D570CE411F55B33 /* EditScanViewController.swift */; };
+		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBF57DC000D667A78E912121DDC7B0F /* SVProgressHUD.m */; };
+		348510DD60C9962D2AAF0847F4E535F8 /* FocusRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060879717714076831178E4C32A72250 /* FocusRectangleView.swift */; };
+		35D5F881C7634DCF19D5BC62D7DA2E81 /* WeScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66826952D85B9141B63C8E1E1CBD973D /* WeScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373D0D2E48BE3CE486106358ED2D8EAE /* WeScan-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9428324B577C5DA0B586FC62D86B119 /* WeScan-dummy.m */; };
+		386465014FE1EBA44AE5BC5B26BCE0E0 /* ShutterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9595E09DDCB807B70C7077AC1D7F72C0 /* ShutterButton.swift */; };
+		3C5D99A34EAEF67F4796F94BDA7055B8 /* CameraScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439A7479E1AFD12C77B88DD68BED1BF /* CameraScannerViewController.swift */; };
+		3C623CB482A390B53F61295366100CBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		491F1C7EC998D7F192C519E32006BEB4 /* rotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 36460DA3BD05DFA93DDA079B816E1B61 /* rotate@2x.png */; };
+		4A64DB01F5D5FC8B28B73FC415C31FF4 /* CaptureSession+Flash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCF7D559C74CA5A16791FE7CAFF8E8F /* CaptureSession+Flash.swift */; };
+		53E1E9A28E3D248875A7B82DB6E52817 /* flashUnavailable@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABC4D7F07C9F7FB963FDD5F222DC5A8 /* flashUnavailable@3x.png */; };
+		54E4FFC35A81AF528AA9D1AF48340FD4 /* Pods-WScannerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9636C3CF091931A5FA4201A1E7D5F4D8 /* Pods-WScannerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5521C9CE826643C55F72438A8D4D7E6D /* CIRectangleDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C4158EC6E31BA15AC33D269294187 /* CIRectangleDetector.swift */; };
+		55ABF07D3C1B5091D705B8569BE1E23D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		5BEFCF30FFC3B29AA2802C8D0149A10B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7AA6712104E2650ADA2B60AB8D9AC7 /* ReviewViewController.swift */; };
+		5FF2508BEBE12FFE02BA2035DEDA0AEF /* flashUnavailable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5ED4935FFCC5986391DE5C8F8FC951 /* flashUnavailable@2x.png */; };
+		66447D76B4A9354EF3262E7C0EFF5B71 /* flash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5108F146784BBE695314E521D3884855 /* flash.png */; };
+		6A0C1F4BE02FB23D02E0D38609F9866D /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29300748A42A2F75C1F6F874C6F2DB8 /* CGImagePropertyOrientation.swift */; };
+		6B7F633753222A23793A09B449864F7C /* Transformable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE5CADE64ED22E9536283B01E500C0 /* Transformable.swift */; };
+		769B0A7638962B8F2A1A48D9A6DFCE8E /* Pods-WScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D777F4FC0C8DED772F981A3E564DEE70 /* Pods-WScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		771EA528DDF4CAA885830E0563DDD7DF /* flashUnavailable.png in Resources */ = {isa = PBXBuildFile; fileRef = D9A2844EF0A63644F9B61E82BBF745CA /* flashUnavailable.png */; };
+		7A90C70B13009C2BF125EF7155C961B3 /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC29E8CCAD5E85C102EB2F31E93EE4E /* CGRect+Utils.swift */; };
+		7ADFB27D3D1E146BBE5810788C89760C /* CaptureDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9EFE60F1192BC34864731BB304DF495 /* CaptureDevice.swift */; };
+		7F52BD0341E46A6053B15014557ACB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */; };
+		81039896E096A884051DD7FD1F4C5959 /* RectangleFeaturesFunnel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983872B8ABCC764B037EA668CD7F63CD /* RectangleFeaturesFunnel.swift */; };
+		8577347F2C86DEB3CFF78975005376BD /* Pods-WScannerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC068292FBB2FD3188E4B8A2DA9AC121 /* Pods-WScannerTests-dummy.m */; };
+		862B39C61CAF1B95B1A00098003DDE15 /* Pods-WScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C27A8D6E514E868E43CE6564865351F /* Pods-WScanner-dummy.m */; };
+		884B6DB211FDB4896DA7B129FA212E5E /* rotate@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19E6003ACB3EEC4937430D08DD29C5D4 /* rotate@3x.png */; };
+		8B21ED5F7DD268C8DC44342B30340B77 /* EditScanCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85F0D707880E612F144D4BC08B9F274 /* EditScanCornerView.swift */; };
+		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 407C86651D22BB17DACC725ABF48BAE5 /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9804180C17E35778796872D0DE4C4F59 /* enhance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 48D202EE37E3F09CFA7E3DC48630821B /* enhance@2x.png */; };
+		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8BBE152593DFD6B8DCB24969DFEB57C /* SVProgressHUD-dummy.m */; };
+		A83A3226628843C76CF9484E0B2ECEDA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 553B5C66F1139A5CBCBED9E5323EC92B /* Localizable.strings */; };
+		AE170265BFE2F49CEDACF67439EB7331 /* CIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101F16F1DDE3FB94C96D28AEFFEE169E /* CIImage+Utils.swift */; };
+		B19129D1C6506B9D245E554DEBBC92D5 /* CGSize+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5118D782B69293F75A6294313DE793 /* CGSize+Utils.swift */; };
+		B3986FFB833B19B95A8E39ADA5B85171 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272727B580D4FDED202C3548ACECF7D9 /* Array+Utils.swift */; };
+		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = A674FC4EB7CC8FD3D108620676BBA389 /* SVIndefiniteAnimatedView.m */; };
+		B95297B23290C0E989E6F8F224582D93 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CFB0D6169EA4512FD3C59B0751264FE /* ScannerViewController.swift */; };
+		C6690E092BEE7252A22E835D6BB31806 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF169971C26479DA311C93F16832EF0 /* Error.swift */; };
+		CAC55CE8B8DDEE487680F7536C88CBAD /* enhance@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86E51822501A50BF14C8F8613AF4EFC4 /* enhance@3x.png */; };
+		CBF60203C1752CA471FE105F1028A1BE /* ZoomGestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1A3028B59C34E6307C1A273493D498 /* ZoomGestureController.swift */; };
+		CCBB5BEF63E263A2EE1273C87F0A88A9 /* AVCaptureVideoOrientation+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6841C26937B5954EE5AA26C22FE015D /* AVCaptureVideoOrientation+Utils.swift */; };
+		D11D5AB90E9AAE909A957E62511C8F7C /* ImageScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8284CABF94E712CF8BFDC7FA468874F2 /* ImageScannerController.swift */; };
+		D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF5E4D258601F822B07A7C74383B897 /* SVRadialGradientLayer.m */; };
+		D5D0C922E0F9E7D7C31A85D935D30D98 /* CaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0455734E72146B1367382CF61218D060 /* CaptureSessionManager.swift */; };
+		D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B5453CA920AF85B5A5983392E13FF87 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD3DD636C690AAFEF5343CCC1F9F8D68 /* CGAffineTransform+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17015D1D84EE977CE467B36177EBF246 /* CGAffineTransform+Utils.swift */; };
+		DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C1920AA787061B654AF6063F0CA8D49 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CB15C7A71C7A861CD117E1F37DBE578 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2255EEF143005FB27E6F1A38BC8E9A6 /* CGPoint+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43471C2DAC1C5C7A0E691987AC69CAF1 /* CGPoint+Utils.swift */; };
+		E28C2A4D11D0E714F957E6AEF7F92B9F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEFE490E4A06D19E868B2B9014BB8BF /* QuartzCore.framework */; };
+		E3385C0E71C6E1793026B93AF325F307 /* WeScan.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C7CDB91A0EA4423EB8C711D33521A3F /* WeScan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E349F42AA0DA88BD79CD9384D589F905 /* enhance.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C4F089526B9C3F340C9FA930EEA4183 /* enhance.png */; };
+		E901CC97D10CB972A3125BF0D6F93E25 /* Pods-WScanner-WScannerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FFF0316BF5116D474AEB7D5394DB6D /* Pods-WScanner-WScannerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC109F38D17450BF1FC6319E09BD482D /* SVProgressAnimatedView.m */; };
+		EF536AF599EC23A04490D489F3DC0A21 /* CaptureSession+Focus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73936182451D35FB34B92E0F3E403DE7 /* CaptureSession+Focus.swift */; };
+		FAE3E073785C63F30B48E5B6191E363A /* CaptureSession+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97676B3EE8EF2DF2E32D4ABD6654756C /* CaptureSession+Orientation.swift */; };
+		FD75D6F4FEB21FE826DE1078D5A939B7 /* flash@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42775489E59D10ED367C258C7F20B4D5 /* flash@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E36E9CC1AABC0B6695612EF30FD65B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE77F0B12823BFAC940902290724DB28;
+			remoteInfo = WeScan;
+		};
+		73B56C739F5026C76E29FB17F3CCCEB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B2A3F974C5B12CDC94B4F6D00FDB0D5;
+			remoteInfo = "Pods-WScanner";
+		};
+		93612D4D4C8E27A945A761751ABFE96B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
+		BB3566DFC711A9C3222EE9AFC2DCC5A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
+			remoteInfo = SVProgressHUD;
+		};
+		DD1E6D2B472C785FD72DAE8F17425014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE77F0B12823BFAC940902290724DB28;
+			remoteInfo = WeScan;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0455734E72146B1367382CF61218D060 /* CaptureSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureSessionManager.swift; path = WeScan/Scan/CaptureSessionManager.swift; sourceTree = "<group>"; };
+		060879717714076831178E4C32A72250 /* FocusRectangleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FocusRectangleView.swift; path = WeScan/Scan/FocusRectangleView.swift; sourceTree = "<group>"; };
+		0B92E5072E1E54E9F444CF5101B8FC6D /* Pods-WScanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WScanner-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0CB15C7A71C7A861CD117E1F37DBE578 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		0E9855BE21699C0367DBAE60EB6483D4 /* Quadrilateral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Quadrilateral.swift; path = WeScan/Common/Quadrilateral.swift; sourceTree = "<group>"; };
+		0F1A3028B59C34E6307C1A273493D498 /* ZoomGestureController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZoomGestureController.swift; path = WeScan/Edit/ZoomGestureController.swift; sourceTree = "<group>"; };
+		101F16F1DDE3FB94C96D28AEFFEE169E /* CIImage+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CIImage+Utils.swift"; path = "WeScan/Extensions/CIImage+Utils.swift"; sourceTree = "<group>"; };
+		122E406866612F3A4E0B80B7A57ECF09 /* Pods-WScanner-WScannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WScanner-WScannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		13FBFCA072CCF2DD29A7A194880831BA /* UIImage+Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Orientation.swift"; path = "WeScan/Extensions/UIImage+Orientation.swift"; sourceTree = "<group>"; };
+		14770B3F907879E9E8B0A788C0450291 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		17015D1D84EE977CE467B36177EBF246 /* CGAffineTransform+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGAffineTransform+Utils.swift"; path = "WeScan/Extensions/CGAffineTransform+Utils.swift"; sourceTree = "<group>"; };
+		19E6003ACB3EEC4937430D08DD29C5D4 /* rotate@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rotate@3x.png"; path = "WeScan/Assets/rotate@3x.png"; sourceTree = "<group>"; };
+		1C1920AA787061B654AF6063F0CA8D49 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		1C4F089526B9C3F340C9FA930EEA4183 /* enhance.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = enhance.png; path = WeScan/Assets/enhance.png; sourceTree = "<group>"; };
+		1D097ED019A6BB63319FB3B55650D7E0 /* Pods-WScanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WScanner-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E2B8F2EAD9657D3688F14B04D8B73BE /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1EE1A0852EDBD1AD8565BE74D8D2B76C /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		2533A88FAD6C39B7BF2697D5598024E6 /* Pods-WScanner-WScannerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WScanner-WScannerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		262713B3ACFC7A3B43CC6B6F99F2C27E /* Pods_WScanner_WScannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WScanner_WScannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		272727B580D4FDED202C3548ACECF7D9 /* Array+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Utils.swift"; path = "WeScan/Extensions/Array+Utils.swift"; sourceTree = "<group>"; };
+		277F71FEE5B74971DCAB1151B1E5F4CE /* EditImageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditImageViewController.swift; path = WeScan/Edit/EditImageViewController.swift; sourceTree = "<group>"; };
+		2CBF57DC000D667A78E912121DDC7B0F /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		2FEFE490E4A06D19E868B2B9014BB8BF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36460DA3BD05DFA93DDA079B816E1B61 /* rotate@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rotate@2x.png"; path = "WeScan/Assets/rotate@2x.png"; sourceTree = "<group>"; };
+		3714689022BB2563C233344443BCEB12 /* Pods_WScannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WScannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		407C86651D22BB17DACC725ABF48BAE5 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		42775489E59D10ED367C258C7F20B4D5 /* flash@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flash@3x.png"; path = "WeScan/Assets/flash@3x.png"; sourceTree = "<group>"; };
+		43471C2DAC1C5C7A0E691987AC69CAF1 /* CGPoint+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGPoint+Utils.swift"; path = "WeScan/Extensions/CGPoint+Utils.swift"; sourceTree = "<group>"; };
+		43E5C7E32B5A35643DFAF2C01A693282 /* Pods-WScanner-WScannerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WScanner-WScannerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46805424F7E70FD87FF545091632353E /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		46ACBADDC3F383053107F12FB1A2D73D /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		4792348377D04E422530E1B0165D7275 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		48D202EE37E3F09CFA7E3DC48630821B /* enhance@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "enhance@2x.png"; path = "WeScan/Assets/enhance@2x.png"; sourceTree = "<group>"; };
+		48E707B48B7CFC0878FE2526F213BFAE /* Pods-WScanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WScanner-frameworks.sh"; sourceTree = "<group>"; };
+		492DB27CA278A772B5A7A234D1DCC9AF /* Pods-WScannerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WScannerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4E22ED837832E60C2C14C6552CEA52D8 /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		4EFD31FCB3F0EA16B40AD3BAD1EB3406 /* UIImage+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Utils.swift"; path = "WeScan/Extensions/UIImage+Utils.swift"; sourceTree = "<group>"; };
+		50FFF0316BF5116D474AEB7D5394DB6D /* Pods-WScanner-WScannerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WScanner-WScannerUITests-umbrella.h"; sourceTree = "<group>"; };
+		5108F146784BBE695314E521D3884855 /* flash.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flash.png; path = WeScan/Assets/flash.png; sourceTree = "<group>"; };
+		516178452A2ED9F8CF4AD42378F4D453 /* UIImage+SFSymbol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+SFSymbol.swift"; path = "WeScan/Extensions/UIImage+SFSymbol.swift"; sourceTree = "<group>"; };
+		5439A7479E1AFD12C77B88DD68BED1BF /* CameraScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraScannerViewController.swift; path = WeScan/Scan/CameraScannerViewController.swift; sourceTree = "<group>"; };
+		5C7AA6712104E2650ADA2B60AB8D9AC7 /* ReviewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReviewViewController.swift; path = WeScan/Review/ReviewViewController.swift; sourceTree = "<group>"; };
+		5C7CDB91A0EA4423EB8C711D33521A3F /* WeScan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeScan.h; path = WeScan/WeScan.h; sourceTree = "<group>"; };
+		5CFB0D6169EA4512FD3C59B0751264FE /* ScannerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ScannerViewController.swift; path = WeScan/Scan/ScannerViewController.swift; sourceTree = "<group>"; };
+		5E8323C767D50418E1A015F3C7A87E38 /* Pods-WScannerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WScannerTests.modulemap"; sourceTree = "<group>"; };
+		5EB765EBCC5363E43EA4681F1BFF8BCC /* WeScan-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WeScan-prefix.pch"; sourceTree = "<group>"; };
+		604FAF818D3465C50C24215228BA697F /* Pods-WScannerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WScannerTests-Info.plist"; sourceTree = "<group>"; };
+		66826952D85B9141B63C8E1E1CBD973D /* WeScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WeScan-umbrella.h"; sourceTree = "<group>"; };
+		68C9F7C84DC9D6B273D6EDE059CAC627 /* WeScan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeScan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C27A8D6E514E868E43CE6564865351F /* Pods-WScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WScanner-dummy.m"; sourceTree = "<group>"; };
+		6E9499649D9D78AE0285187BF938AEEF /* WeScan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WeScan.release.xcconfig; sourceTree = "<group>"; };
+		6EF169971C26479DA311C93F16832EF0 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = WeScan/Common/Error.swift; sourceTree = "<group>"; };
+		73936182451D35FB34B92E0F3E403DE7 /* CaptureSession+Focus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CaptureSession+Focus.swift"; path = "WeScan/Session/CaptureSession+Focus.swift"; sourceTree = "<group>"; };
+		73C3690E85AA869B9A69B268ECFBA7CC /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		75721BD82899B5FD3EB0F422A58C43DD /* Pods-WScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WScanner.release.xcconfig"; sourceTree = "<group>"; };
+		7821C1802B74165ECD9EFE5391175C1D /* Pods-WScanner-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WScanner-Info.plist"; sourceTree = "<group>"; };
+		787CFC91541DE658DAF1D1060BE3B767 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		7B5453CA920AF85B5A5983392E13FF87 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		7F3ACFFE7CB3E6853DA92A5E7BF89882 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7FC29E8CCAD5E85C102EB2F31E93EE4E /* CGRect+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGRect+Utils.swift"; path = "WeScan/Extensions/CGRect+Utils.swift"; sourceTree = "<group>"; };
+		8284CABF94E712CF8BFDC7FA468874F2 /* ImageScannerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageScannerController.swift; path = WeScan/ImageScannerController.swift; sourceTree = "<group>"; };
+		83F1D80E7D9A9ABF8E97DF3A3685FDB1 /* Pods-WScannerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WScannerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		841E7FD9527D9D16812312EECC7DE6E5 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		86E51822501A50BF14C8F8613AF4EFC4 /* enhance@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "enhance@3x.png"; path = "WeScan/Assets/enhance@3x.png"; sourceTree = "<group>"; };
+		86F931AAA1766CE88D01A3CD7EBB13AD /* CaptureSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureSession.swift; path = WeScan/Session/CaptureSession.swift; sourceTree = "<group>"; };
+		8AAE5CADE64ED22E9536283B01E500C0 /* Transformable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformable.swift; path = WeScan/Protocols/Transformable.swift; sourceTree = "<group>"; };
+		8CFD8BA1236D11A5D995FC2AC1EC2A7F /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		8EABB7F2E0AFACE76AF8506C6B1B108F /* Pods-WScanner-WScannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WScanner-WScannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		92175FBF29E4A59CB18D4A92C33F1816 /* QuadrilateralView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuadrilateralView.swift; path = WeScan/Common/QuadrilateralView.swift; sourceTree = "<group>"; };
+		93A42D73E671E2A190EA42A56D92D102 /* Pods-WScannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WScannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		9595E09DDCB807B70C7077AC1D7F72C0 /* ShutterButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShutterButton.swift; path = WeScan/Scan/ShutterButton.swift; sourceTree = "<group>"; };
+		9636C3CF091931A5FA4201A1E7D5F4D8 /* Pods-WScannerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WScannerTests-umbrella.h"; sourceTree = "<group>"; };
+		970513F0670989D550B77A649E11B9BE /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		97676B3EE8EF2DF2E32D4ABD6654756C /* CaptureSession+Orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CaptureSession+Orientation.swift"; path = "WeScan/Session/CaptureSession+Orientation.swift"; sourceTree = "<group>"; };
+		983872B8ABCC764B037EA668CD7F63CD /* RectangleFeaturesFunnel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RectangleFeaturesFunnel.swift; path = WeScan/Scan/RectangleFeaturesFunnel.swift; sourceTree = "<group>"; };
+		9983115400395FECCEDFEDE47AADCDD9 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		9CB81DC9309C2D256D570CE411F55B33 /* EditScanViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditScanViewController.swift; path = WeScan/Edit/EditScanViewController.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A00C30BBEC6587105AD2CAD07A35E3A1 /* WeScan.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WeScan.modulemap; sourceTree = "<group>"; };
+		A2C9D7928458F1A763052AAE3E23A9B4 /* Pods-WScanner-WScannerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WScanner-WScannerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A3581F989D9729383756490D8FDB8CAE /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		A674FC4EB7CC8FD3D108620676BBA389 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		A6841C26937B5954EE5AA26C22FE015D /* AVCaptureVideoOrientation+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AVCaptureVideoOrientation+Utils.swift"; path = "WeScan/Extensions/AVCaptureVideoOrientation+Utils.swift"; sourceTree = "<group>"; };
+		ADB4F925FB49A96C5E2548E09D0B7EED /* Pods-WScanner-WScannerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WScanner-WScannerUITests-dummy.m"; sourceTree = "<group>"; };
+		B5843DCE8E598C78C187A4F180C8CC92 /* Pods-WScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WScanner.modulemap"; sourceTree = "<group>"; };
+		B9EFE60F1192BC34864731BB304DF495 /* CaptureDevice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureDevice.swift; path = WeScan/Protocols/CaptureDevice.swift; sourceTree = "<group>"; };
+		BABC4D7F07C9F7FB963FDD5F222DC5A8 /* flashUnavailable@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashUnavailable@3x.png"; path = "WeScan/Assets/flashUnavailable@3x.png"; sourceTree = "<group>"; };
+		BC5118D782B69293F75A6294313DE793 /* CGSize+Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CGSize+Utils.swift"; path = "WeScan/Extensions/CGSize+Utils.swift"; sourceTree = "<group>"; };
+		C096AABE836D0E0B82351DF66FCDE15A /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C12197C683129D46D2DC0F0596D9090D /* Pods_WScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32CD408C0F3804FD1CDC682C19A8B07 /* rotate.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = rotate.png; path = WeScan/Assets/rotate.png; sourceTree = "<group>"; };
+		C8BBE152593DFD6B8DCB24969DFEB57C /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		C9428324B577C5DA0B586FC62D86B119 /* WeScan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WeScan-dummy.m"; sourceTree = "<group>"; };
+		CC90F00A317D5AF1161917F928618B27 /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		D29300748A42A2F75C1F6F874C6F2DB8 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGImagePropertyOrientation.swift; path = WeScan/Extensions/CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		D35E9CBB8B0D520BAD4F341F73480BAB /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D4365CAB24BB38A00DBA1E6B2C0F4047 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D5F11509D5EBFF9ECA5EE4E49D34DCFD /* WeScan-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WeScan-Info.plist"; sourceTree = "<group>"; };
+		D777F4FC0C8DED772F981A3E564DEE70 /* Pods-WScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WScanner-umbrella.h"; sourceTree = "<group>"; };
+		D7A9E18CBE6EDA0D89F4DCEDE1D477B6 /* Pods-WScanner-WScannerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WScanner-WScannerUITests-Info.plist"; sourceTree = "<group>"; };
+		D85F0D707880E612F144D4BC08B9F274 /* EditScanCornerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditScanCornerView.swift; path = WeScan/Common/EditScanCornerView.swift; sourceTree = "<group>"; };
+		D9A2844EF0A63644F9B61E82BBF745CA /* flashUnavailable.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = flashUnavailable.png; path = WeScan/Assets/flashUnavailable.png; sourceTree = "<group>"; };
+		DC068292FBB2FD3188E4B8A2DA9AC121 /* Pods-WScannerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WScannerTests-dummy.m"; sourceTree = "<group>"; };
+		DC109F38D17450BF1FC6319E09BD482D /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		DD9C3CE2633E02AEA51FC5919A280A4D /* VisionRectangleDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisionRectangleDetector.swift; path = WeScan/Common/VisionRectangleDetector.swift; sourceTree = "<group>"; };
+		DDCF7D559C74CA5A16791FE7CAFF8E8F /* CaptureSession+Flash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CaptureSession+Flash.swift"; path = "WeScan/Session/CaptureSession+Flash.swift"; sourceTree = "<group>"; };
+		DF78BAD590A0D25F6C09D47888249AD5 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E14B98483EAD3EC5A29B9909CC3A9A87 /* WeScan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WeScan.debug.xcconfig; sourceTree = "<group>"; };
+		E63196D7B8B5A61D0ADB3018DA220A12 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		E9003BD9C91DBAD3C0DDE2F926434D76 /* Pods-WScannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WScannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E96D9A12CD78291385762B16E69BF901 /* flash@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flash@2x.png"; path = "WeScan/Assets/flash@2x.png"; sourceTree = "<group>"; };
+		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5ED4935FFCC5986391DE5C8F8FC951 /* flashUnavailable@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "flashUnavailable@2x.png"; path = "WeScan/Assets/flashUnavailable@2x.png"; sourceTree = "<group>"; };
+		FA00BF0B803078735D213FCE7A89AADC /* Pods-WScanner-WScannerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WScanner-WScannerUITests.modulemap"; sourceTree = "<group>"; };
+		FBF5E4D258601F822B07A7C74383B897 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		FD1C4158EC6E31BA15AC33D269294187 /* CIRectangleDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIRectangleDetector.swift; path = WeScan/Common/CIRectangleDetector.swift; sourceTree = "<group>"; };
+		FDE9507EDB0CE217FDEDA810E968A2B1 /* Pods-WScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WScanner.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1081A00AF52C1EA26BD962B9E3924A7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C623CB482A390B53F61295366100CBA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35952A7C141DD1DEB65C563469780C81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55ABF07D3C1B5091D705B8569BE1E23D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36FDBF6B0278BC80B5B4C6B293E0E22D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0149A5CC38D6C44CEA492C723BABAEFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3D1D1191F24E31CEEA04BDB3FB4C0F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F52BD0341E46A6053B15014557ACB6A /* Foundation.framework in Frameworks */,
+				E28C2A4D11D0E714F957E6AEF7F92B9F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7C486147129048F202D25BDBBE89935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F1DC68BECA8DBBE40559FD5C56FC65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14AD23B039CD03C71635843796FAC09D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1C4F089526B9C3F340C9FA930EEA4183 /* enhance.png */,
+				48D202EE37E3F09CFA7E3DC48630821B /* enhance@2x.png */,
+				86E51822501A50BF14C8F8613AF4EFC4 /* enhance@3x.png */,
+				5108F146784BBE695314E521D3884855 /* flash.png */,
+				E96D9A12CD78291385762B16E69BF901 /* flash@2x.png */,
+				42775489E59D10ED367C258C7F20B4D5 /* flash@3x.png */,
+				D9A2844EF0A63644F9B61E82BBF745CA /* flashUnavailable.png */,
+				EC5ED4935FFCC5986391DE5C8F8FC951 /* flashUnavailable@2x.png */,
+				BABC4D7F07C9F7FB963FDD5F222DC5A8 /* flashUnavailable@3x.png */,
+				553B5C66F1139A5CBCBED9E5323EC92B /* Localizable.strings */,
+				C32CD408C0F3804FD1CDC682C19A8B07 /* rotate.png */,
+				36460DA3BD05DFA93DDA079B816E1B61 /* rotate@2x.png */,
+				19E6003ACB3EEC4937430D08DD29C5D4 /* rotate@3x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D325A42620E7427FB70FB046C7B7B240 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1961014F2A8EB16DBB9222E2859C5AF8 /* Pods-WScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E8323C767D50418E1A015F3C7A87E38 /* Pods-WScannerTests.modulemap */,
+				492DB27CA278A772B5A7A234D1DCC9AF /* Pods-WScannerTests-acknowledgements.markdown */,
+				83F1D80E7D9A9ABF8E97DF3A3685FDB1 /* Pods-WScannerTests-acknowledgements.plist */,
+				DC068292FBB2FD3188E4B8A2DA9AC121 /* Pods-WScannerTests-dummy.m */,
+				604FAF818D3465C50C24215228BA697F /* Pods-WScannerTests-Info.plist */,
+				9636C3CF091931A5FA4201A1E7D5F4D8 /* Pods-WScannerTests-umbrella.h */,
+				E9003BD9C91DBAD3C0DDE2F926434D76 /* Pods-WScannerTests.debug.xcconfig */,
+				93A42D73E671E2A190EA42A56D92D102 /* Pods-WScannerTests.release.xcconfig */,
+			);
+			name = "Pods-WScannerTests";
+			path = "Target Support Files/Pods-WScannerTests";
+			sourceTree = "<group>";
+		};
+		1DDEC10F0F60B196D9D9E91CC459FB23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				936321CB505556F0791516D9A84E90BD /* SVProgressHUD */,
+				C2E3AE069B66D173A3132D6782D275AB /* WeScan */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		226A095319B4E9D1323C26456DBC1B0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C12197C683129D46D2DC0F0596D9090D /* Pods_WScanner.framework */,
+				262713B3ACFC7A3B43CC6B6F99F2C27E /* Pods_WScanner_WScannerUITests.framework */,
+				3714689022BB2563C233344443BCEB12 /* Pods_WScannerTests.framework */,
+				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */,
+				68C9F7C84DC9D6B273D6EDE059CAC627 /* WeScan.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD21DBBA74B94CDBB2EC17111066F91 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E63196D7B8B5A61D0ADB3018DA220A12 /* SVProgressHUD.modulemap */,
+				C8BBE152593DFD6B8DCB24969DFEB57C /* SVProgressHUD-dummy.m */,
+				1EE1A0852EDBD1AD8565BE74D8D2B76C /* SVProgressHUD-Info.plist */,
+				970513F0670989D550B77A649E11B9BE /* SVProgressHUD-prefix.pch */,
+				1C1920AA787061B654AF6063F0CA8D49 /* SVProgressHUD-umbrella.h */,
+				CC90F00A317D5AF1161917F928618B27 /* SVProgressHUD.debug.xcconfig */,
+				4E22ED837832E60C2C14C6552CEA52D8 /* SVProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		7341EB87C7F19DB25DEC5F02C32D5CD0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C728E25B2AA11375D6ED06DE710C1FD /* Pods-WScanner */,
+				76375686056B6EAAB186774809B93C84 /* Pods-WScanner-WScannerUITests */,
+				1961014F2A8EB16DBB9222E2859C5AF8 /* Pods-WScannerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		76375686056B6EAAB186774809B93C84 /* Pods-WScanner-WScannerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA00BF0B803078735D213FCE7A89AADC /* Pods-WScanner-WScannerUITests.modulemap */,
+				43E5C7E32B5A35643DFAF2C01A693282 /* Pods-WScanner-WScannerUITests-acknowledgements.markdown */,
+				A2C9D7928458F1A763052AAE3E23A9B4 /* Pods-WScanner-WScannerUITests-acknowledgements.plist */,
+				ADB4F925FB49A96C5E2548E09D0B7EED /* Pods-WScanner-WScannerUITests-dummy.m */,
+				2533A88FAD6C39B7BF2697D5598024E6 /* Pods-WScanner-WScannerUITests-frameworks.sh */,
+				D7A9E18CBE6EDA0D89F4DCEDE1D477B6 /* Pods-WScanner-WScannerUITests-Info.plist */,
+				50FFF0316BF5116D474AEB7D5394DB6D /* Pods-WScanner-WScannerUITests-umbrella.h */,
+				122E406866612F3A4E0B80B7A57ECF09 /* Pods-WScanner-WScannerUITests.debug.xcconfig */,
+				8EABB7F2E0AFACE76AF8506C6B1B108F /* Pods-WScanner-WScannerUITests.release.xcconfig */,
+			);
+			name = "Pods-WScanner-WScannerUITests";
+			path = "Target Support Files/Pods-WScanner-WScannerUITests";
+			sourceTree = "<group>";
+		};
+		7C728E25B2AA11375D6ED06DE710C1FD /* Pods-WScanner */ = {
+			isa = PBXGroup;
+			children = (
+				B5843DCE8E598C78C187A4F180C8CC92 /* Pods-WScanner.modulemap */,
+				0B92E5072E1E54E9F444CF5101B8FC6D /* Pods-WScanner-acknowledgements.markdown */,
+				1D097ED019A6BB63319FB3B55650D7E0 /* Pods-WScanner-acknowledgements.plist */,
+				6C27A8D6E514E868E43CE6564865351F /* Pods-WScanner-dummy.m */,
+				48E707B48B7CFC0878FE2526F213BFAE /* Pods-WScanner-frameworks.sh */,
+				7821C1802B74165ECD9EFE5391175C1D /* Pods-WScanner-Info.plist */,
+				D777F4FC0C8DED772F981A3E564DEE70 /* Pods-WScanner-umbrella.h */,
+				FDE9507EDB0CE217FDEDA810E968A2B1 /* Pods-WScanner.debug.xcconfig */,
+				75721BD82899B5FD3EB0F422A58C43DD /* Pods-WScanner.release.xcconfig */,
+			);
+			name = "Pods-WScanner";
+			path = "Target Support Files/Pods-WScanner";
+			sourceTree = "<group>";
+		};
+		918E45B5499FED0356E85356FDD73CFA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A00C30BBEC6587105AD2CAD07A35E3A1 /* WeScan.modulemap */,
+				C9428324B577C5DA0B586FC62D86B119 /* WeScan-dummy.m */,
+				D5F11509D5EBFF9ECA5EE4E49D34DCFD /* WeScan-Info.plist */,
+				5EB765EBCC5363E43EA4681F1BFF8BCC /* WeScan-prefix.pch */,
+				66826952D85B9141B63C8E1E1CBD973D /* WeScan-umbrella.h */,
+				E14B98483EAD3EC5A29B9909CC3A9A87 /* WeScan.debug.xcconfig */,
+				6E9499649D9D78AE0285187BF938AEEF /* WeScan.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WeScan";
+			sourceTree = "<group>";
+		};
+		936321CB505556F0791516D9A84E90BD /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				407C86651D22BB17DACC725ABF48BAE5 /* SVIndefiniteAnimatedView.h */,
+				A674FC4EB7CC8FD3D108620676BBA389 /* SVIndefiniteAnimatedView.m */,
+				0CB15C7A71C7A861CD117E1F37DBE578 /* SVProgressAnimatedView.h */,
+				DC109F38D17450BF1FC6319E09BD482D /* SVProgressAnimatedView.m */,
+				14770B3F907879E9E8B0A788C0450291 /* SVProgressHUD.h */,
+				2CBF57DC000D667A78E912121DDC7B0F /* SVProgressHUD.m */,
+				7B5453CA920AF85B5A5983392E13FF87 /* SVRadialGradientLayer.h */,
+				FBF5E4D258601F822B07A7C74383B897 /* SVRadialGradientLayer.m */,
+				CB16EF926D0CB084E942A8DB4B51FC46 /* Resources */,
+				2CD21DBBA74B94CDBB2EC17111066F91 /* Support Files */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		C2E3AE069B66D173A3132D6782D275AB /* WeScan */ = {
+			isa = PBXGroup;
+			children = (
+				272727B580D4FDED202C3548ACECF7D9 /* Array+Utils.swift */,
+				A6841C26937B5954EE5AA26C22FE015D /* AVCaptureVideoOrientation+Utils.swift */,
+				5439A7479E1AFD12C77B88DD68BED1BF /* CameraScannerViewController.swift */,
+				B9EFE60F1192BC34864731BB304DF495 /* CaptureDevice.swift */,
+				86F931AAA1766CE88D01A3CD7EBB13AD /* CaptureSession.swift */,
+				DDCF7D559C74CA5A16791FE7CAFF8E8F /* CaptureSession+Flash.swift */,
+				73936182451D35FB34B92E0F3E403DE7 /* CaptureSession+Focus.swift */,
+				97676B3EE8EF2DF2E32D4ABD6654756C /* CaptureSession+Orientation.swift */,
+				0455734E72146B1367382CF61218D060 /* CaptureSessionManager.swift */,
+				17015D1D84EE977CE467B36177EBF246 /* CGAffineTransform+Utils.swift */,
+				D29300748A42A2F75C1F6F874C6F2DB8 /* CGImagePropertyOrientation.swift */,
+				43471C2DAC1C5C7A0E691987AC69CAF1 /* CGPoint+Utils.swift */,
+				7FC29E8CCAD5E85C102EB2F31E93EE4E /* CGRect+Utils.swift */,
+				BC5118D782B69293F75A6294313DE793 /* CGSize+Utils.swift */,
+				101F16F1DDE3FB94C96D28AEFFEE169E /* CIImage+Utils.swift */,
+				FD1C4158EC6E31BA15AC33D269294187 /* CIRectangleDetector.swift */,
+				277F71FEE5B74971DCAB1151B1E5F4CE /* EditImageViewController.swift */,
+				D85F0D707880E612F144D4BC08B9F274 /* EditScanCornerView.swift */,
+				9CB81DC9309C2D256D570CE411F55B33 /* EditScanViewController.swift */,
+				6EF169971C26479DA311C93F16832EF0 /* Error.swift */,
+				060879717714076831178E4C32A72250 /* FocusRectangleView.swift */,
+				8284CABF94E712CF8BFDC7FA468874F2 /* ImageScannerController.swift */,
+				0E9855BE21699C0367DBAE60EB6483D4 /* Quadrilateral.swift */,
+				92175FBF29E4A59CB18D4A92C33F1816 /* QuadrilateralView.swift */,
+				983872B8ABCC764B037EA668CD7F63CD /* RectangleFeaturesFunnel.swift */,
+				5C7AA6712104E2650ADA2B60AB8D9AC7 /* ReviewViewController.swift */,
+				5CFB0D6169EA4512FD3C59B0751264FE /* ScannerViewController.swift */,
+				9595E09DDCB807B70C7077AC1D7F72C0 /* ShutterButton.swift */,
+				8AAE5CADE64ED22E9536283B01E500C0 /* Transformable.swift */,
+				13FBFCA072CCF2DD29A7A194880831BA /* UIImage+Orientation.swift */,
+				516178452A2ED9F8CF4AD42378F4D453 /* UIImage+SFSymbol.swift */,
+				4EFD31FCB3F0EA16B40AD3BAD1EB3406 /* UIImage+Utils.swift */,
+				DD9C3CE2633E02AEA51FC5919A280A4D /* VisionRectangleDetector.swift */,
+				5C7CDB91A0EA4423EB8C711D33521A3F /* WeScan.h */,
+				0F1A3028B59C34E6307C1A273493D498 /* ZoomGestureController.swift */,
+				14AD23B039CD03C71635843796FAC09D /* Resources */,
+				918E45B5499FED0356E85356FDD73CFA /* Support Files */,
+			);
+			path = WeScan;
+			sourceTree = "<group>";
+		};
+		CB16EF926D0CB084E942A8DB4B51FC46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				73C3690E85AA869B9A69B268ECFBA7CC /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				1DDEC10F0F60B196D9D9E91CC459FB23 /* Pods */,
+				226A095319B4E9D1323C26456DBC1B0B /* Products */,
+				7341EB87C7F19DB25DEC5F02C32D5CD0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D325A42620E7427FB70FB046C7B7B240 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				31FE7C6ECA71C614A5A667C679B23874 /* Foundation.framework */,
+				2FEFE490E4A06D19E868B2B9014BB8BF /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06E7E5A38A1C62266D3494897DE4049E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E4FFC35A81AF528AA9D1AF48340FD4 /* Pods-WScannerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3009605B801D2887157259E0F60243D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				769B0A7638962B8F2A1A48D9A6DFCE8E /* Pods-WScanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38BC0ACEF3F126DA291E109A6A705F13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35D5F881C7634DCF19D5BC62D7DA2E81 /* WeScan-umbrella.h in Headers */,
+				E3385C0E71C6E1793026B93AF325F307 /* WeScan.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5621C066EED5509A5C4AF2E208AD1DD2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E901CC97D10CB972A3125BF0D6F93E25 /* Pods-WScanner-WScannerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C044C67F11489EFA3459B8399E7061C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */,
+				E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */,
+				DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */,
+				0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */,
+				D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				7C044C67F11489EFA3459B8399E7061C /* Headers */,
+				D0233C648200ED130A278D7164E80914 /* Sources */,
+				B3D1D1191F24E31CEEA04BDB3FB4C0F2 /* Frameworks */,
+				7BB2E885B360CCC1AEF0C191542BA06E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B2A3F974C5B12CDC94B4F6D00FDB0D5 /* Pods-WScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5654AF92F6C0E64090E366AAF7512420 /* Build configuration list for PBXNativeTarget "Pods-WScanner" */;
+			buildPhases = (
+				3009605B801D2887157259E0F60243D2 /* Headers */,
+				3AE238F13FEE8B2A25870B1EBE70C8DD /* Sources */,
+				36FDBF6B0278BC80B5B4C6B293E0E22D /* Frameworks */,
+				3502FAE1FF967C23345CFC7787FD9A72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				049E0A19E52423D383341238C4E589B3 /* PBXTargetDependency */,
+				A51D0B96C0013D3BDDA1E70AA6A38E0F /* PBXTargetDependency */,
+			);
+			name = "Pods-WScanner";
+			productName = "Pods-WScanner";
+			productReference = C12197C683129D46D2DC0F0596D9090D /* Pods_WScanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE77F0B12823BFAC940902290724DB28 /* WeScan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01A19600E889D91EF42C8D22E79679A3 /* Build configuration list for PBXNativeTarget "WeScan" */;
+			buildPhases = (
+				38BC0ACEF3F126DA291E109A6A705F13 /* Headers */,
+				A01CF0DB28A49809F093B3D38A24EFBD /* Sources */,
+				C7C486147129048F202D25BDBBE89935 /* Frameworks */,
+				9456FCF1BA986C54A7681736E7D8B4F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeScan;
+			productName = WeScan;
+			productReference = 68C9F7C84DC9D6B273D6EDE059CAC627 /* WeScan.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF42FB735A7898C9F017AB259BB31E65 /* Pods-WScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C67910906860916A280DEC827368FD4 /* Build configuration list for PBXNativeTarget "Pods-WScannerTests" */;
+			buildPhases = (
+				06E7E5A38A1C62266D3494897DE4049E /* Headers */,
+				D77D183B2DF8C48D72AE6A1337497005 /* Sources */,
+				1081A00AF52C1EA26BD962B9E3924A7C /* Frameworks */,
+				C2FFD948F8217BA9DE508F1CAC36A621 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FF4C80F992F5B41E7CC9ACA5E588948 /* PBXTargetDependency */,
+			);
+			name = "Pods-WScannerTests";
+			productName = "Pods-WScannerTests";
+			productReference = 3714689022BB2563C233344443BCEB12 /* Pods_WScannerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B25F4DBC05A838789B9109BA8D966CE0 /* Pods-WScanner-WScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B4839C237220B6DF81AACCDBA9999C /* Build configuration list for PBXNativeTarget "Pods-WScanner-WScannerUITests" */;
+			buildPhases = (
+				5621C066EED5509A5C4AF2E208AD1DD2 /* Headers */,
+				79F2C213F4131DA3777435A84E50F911 /* Sources */,
+				35952A7C141DD1DEB65C563469780C81 /* Frameworks */,
+				44EDE39D1825D4DC52F3F1EE5EB5D796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BE506893A066F44219B6DC3F32B3E7B /* PBXTargetDependency */,
+				E9C30A1B2FD1CAFC7C8ADCCFF2F5A547 /* PBXTargetDependency */,
+			);
+			name = "Pods-WScanner-WScannerUITests";
+			productName = "Pods-WScanner-WScannerUITests";
+			productReference = 262713B3ACFC7A3B43CC6B6F99F2C27E /* Pods_WScanner_WScannerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				"es-419",
+				es,
+				fr,
+				hu,
+				it,
+				pl,
+				"pt-BR",
+				"pt-PT",
+				ru,
+				tr,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 226A095319B4E9D1323C26456DBC1B0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B2A3F974C5B12CDC94B4F6D00FDB0D5 /* Pods-WScanner */,
+				B25F4DBC05A838789B9109BA8D966CE0 /* Pods-WScanner-WScannerUITests */,
+				AF42FB735A7898C9F017AB259BB31E65 /* Pods-WScannerTests */,
+				1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */,
+				AE77F0B12823BFAC940902290724DB28 /* WeScan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3502FAE1FF967C23345CFC7787FD9A72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44EDE39D1825D4DC52F3F1EE5EB5D796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BB2E885B360CCC1AEF0C191542BA06E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9456FCF1BA986C54A7681736E7D8B4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E349F42AA0DA88BD79CD9384D589F905 /* enhance.png in Resources */,
+				9804180C17E35778796872D0DE4C4F59 /* enhance@2x.png in Resources */,
+				CAC55CE8B8DDEE487680F7536C88CBAD /* enhance@3x.png in Resources */,
+				66447D76B4A9354EF3262E7C0EFF5B71 /* flash.png in Resources */,
+				1ED51D5EC3321C59DA528E9685BB27A2 /* flash@2x.png in Resources */,
+				FD75D6F4FEB21FE826DE1078D5A939B7 /* flash@3x.png in Resources */,
+				771EA528DDF4CAA885830E0563DDD7DF /* flashUnavailable.png in Resources */,
+				5FF2508BEBE12FFE02BA2035DEDA0AEF /* flashUnavailable@2x.png in Resources */,
+				53E1E9A28E3D248875A7B82DB6E52817 /* flashUnavailable@3x.png in Resources */,
+				A83A3226628843C76CF9484E0B2ECEDA /* Localizable.strings in Resources */,
+				0B2480AFBC39044DB0772F85FC85C564 /* rotate.png in Resources */,
+				491F1C7EC998D7F192C519E32006BEB4 /* rotate@2x.png in Resources */,
+				884B6DB211FDB4896DA7B129FA212E5E /* rotate@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2FFD948F8217BA9DE508F1CAC36A621 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AE238F13FEE8B2A25870B1EBE70C8DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862B39C61CAF1B95B1A00098003DDE15 /* Pods-WScanner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79F2C213F4131DA3777435A84E50F911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A03E642231B3C5EE4DB9DB63356C13B /* Pods-WScanner-WScannerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01CF0DB28A49809F093B3D38A24EFBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3986FFB833B19B95A8E39ADA5B85171 /* Array+Utils.swift in Sources */,
+				CCBB5BEF63E263A2EE1273C87F0A88A9 /* AVCaptureVideoOrientation+Utils.swift in Sources */,
+				3C5D99A34EAEF67F4796F94BDA7055B8 /* CameraScannerViewController.swift in Sources */,
+				7ADFB27D3D1E146BBE5810788C89760C /* CaptureDevice.swift in Sources */,
+				4A64DB01F5D5FC8B28B73FC415C31FF4 /* CaptureSession+Flash.swift in Sources */,
+				EF536AF599EC23A04490D489F3DC0A21 /* CaptureSession+Focus.swift in Sources */,
+				FAE3E073785C63F30B48E5B6191E363A /* CaptureSession+Orientation.swift in Sources */,
+				1D2C14A127C91EEB82228658F91BB905 /* CaptureSession.swift in Sources */,
+				D5D0C922E0F9E7D7C31A85D935D30D98 /* CaptureSessionManager.swift in Sources */,
+				DD3DD636C690AAFEF5343CCC1F9F8D68 /* CGAffineTransform+Utils.swift in Sources */,
+				6A0C1F4BE02FB23D02E0D38609F9866D /* CGImagePropertyOrientation.swift in Sources */,
+				E2255EEF143005FB27E6F1A38BC8E9A6 /* CGPoint+Utils.swift in Sources */,
+				7A90C70B13009C2BF125EF7155C961B3 /* CGRect+Utils.swift in Sources */,
+				B19129D1C6506B9D245E554DEBBC92D5 /* CGSize+Utils.swift in Sources */,
+				AE170265BFE2F49CEDACF67439EB7331 /* CIImage+Utils.swift in Sources */,
+				5521C9CE826643C55F72438A8D4D7E6D /* CIRectangleDetector.swift in Sources */,
+				2A1131A9102C6416763994F8D216CBC9 /* EditImageViewController.swift in Sources */,
+				8B21ED5F7DD268C8DC44342B30340B77 /* EditScanCornerView.swift in Sources */,
+				2DED17282AE1FF78C347E8D7C99E4E04 /* EditScanViewController.swift in Sources */,
+				C6690E092BEE7252A22E835D6BB31806 /* Error.swift in Sources */,
+				348510DD60C9962D2AAF0847F4E535F8 /* FocusRectangleView.swift in Sources */,
+				D11D5AB90E9AAE909A957E62511C8F7C /* ImageScannerController.swift in Sources */,
+				2C0EE8303E49B03464F7F97D294920C0 /* Quadrilateral.swift in Sources */,
+				291E87B13688A71018326C55C1FB46B0 /* QuadrilateralView.swift in Sources */,
+				81039896E096A884051DD7FD1F4C5959 /* RectangleFeaturesFunnel.swift in Sources */,
+				5BEFCF30FFC3B29AA2802C8D0149A10B /* ReviewViewController.swift in Sources */,
+				B95297B23290C0E989E6F8F224582D93 /* ScannerViewController.swift in Sources */,
+				386465014FE1EBA44AE5BC5B26BCE0E0 /* ShutterButton.swift in Sources */,
+				6B7F633753222A23793A09B449864F7C /* Transformable.swift in Sources */,
+				24BA0AF7500181E23F9587349E6030DB /* UIImage+Orientation.swift in Sources */,
+				13323D6FB9BF3D59C031F6C0B64FB6B7 /* UIImage+SFSymbol.swift in Sources */,
+				150228C89E819187CF7F5AEE4CD0F8F9 /* UIImage+Utils.swift in Sources */,
+				08FE4526DA60E0556D1C28FFE9A7EB9D /* VisionRectangleDetector.swift in Sources */,
+				373D0D2E48BE3CE486106358ED2D8EAE /* WeScan-dummy.m in Sources */,
+				CBF60203C1752CA471FE105F1028A1BE /* ZoomGestureController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0233C648200ED130A278D7164E80914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */,
+				EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */,
+				9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */,
+				3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */,
+				D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D77D183B2DF8C48D72AE6A1337497005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8577347F2C86DEB3CFF78975005376BD /* Pods-WScannerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		049E0A19E52423D383341238C4E589B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = BB3566DFC711A9C3222EE9AFC2DCC5A8 /* PBXContainerItemProxy */;
+		};
+		6FF4C80F992F5B41E7CC9ACA5E588948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WScanner";
+			target = 4B2A3F974C5B12CDC94B4F6D00FDB0D5 /* Pods-WScanner */;
+			targetProxy = 73B56C739F5026C76E29FB17F3CCCEB8 /* PBXContainerItemProxy */;
+		};
+		8BE506893A066F44219B6DC3F32B3E7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
+			targetProxy = 93612D4D4C8E27A945A761751ABFE96B /* PBXContainerItemProxy */;
+		};
+		A51D0B96C0013D3BDDA1E70AA6A38E0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WeScan;
+			target = AE77F0B12823BFAC940902290724DB28 /* WeScan */;
+			targetProxy = 0E36E9CC1AABC0B6695612EF30FD65B8 /* PBXContainerItemProxy */;
+		};
+		E9C30A1B2FD1CAFC7C8ADCCFF2F5A547 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WeScan;
+			target = AE77F0B12823BFAC940902290724DB28 /* WeScan */;
+			targetProxy = DD1E6D2B472C785FD72DAE8F17425014 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		553B5C66F1139A5CBCBED9E5323EC92B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F3ACFFE7CB3E6853DA92A5E7BF89882 /* Localizable.strings */,
+				46805424F7E70FD87FF545091632353E /* Localizable.strings */,
+				A3581F989D9729383756490D8FDB8CAE /* Localizable.strings */,
+				D35E9CBB8B0D520BAD4F341F73480BAB /* Localizable.strings */,
+				841E7FD9527D9D16812312EECC7DE6E5 /* Localizable.strings */,
+				D4365CAB24BB38A00DBA1E6B2C0F4047 /* Localizable.strings */,
+				C096AABE836D0E0B82351DF66FCDE15A /* Localizable.strings */,
+				1E2B8F2EAD9657D3688F14B04D8B73BE /* Localizable.strings */,
+				46ACBADDC3F383053107F12FB1A2D73D /* Localizable.strings */,
+				9983115400395FECCEDFEDE47AADCDD9 /* Localizable.strings */,
+				4792348377D04E422530E1B0165D7275 /* Localizable.strings */,
+				DF78BAD590A0D25F6C09D47888249AD5 /* Localizable.strings */,
+				8CFD8BA1236D11A5D995FC2AC1EC2A7F /* Localizable.strings */,
+				787CFC91541DE658DAF1D1060BE3B767 /* Localizable.strings */,
+			);
+			name = Localizable.strings;
+			path = WeScan;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D1B73008A4CC237CFA042834DC54EA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EABB7F2E0AFACE76AF8506C6B1B108F /* Pods-WScanner-WScannerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WScanner-WScannerUITests/Pods-WScanner-WScannerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WScanner-WScannerUITests/Pods-WScanner-WScannerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2523392A09D6E826DD64976C0C445393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E22ED837832E60C2C14C6552CEA52D8 /* SVProgressHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2860B597E9D07FAEB86E6D017FBE4336 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122E406866612F3A4E0B80B7A57ECF09 /* Pods-WScanner-WScannerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WScanner-WScannerUITests/Pods-WScanner-WScannerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WScanner-WScannerUITests/Pods-WScanner-WScannerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56CEDC686C1ECA50D5CCE0D90BCCC81E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE9507EDB0CE217FDEDA810E968A2B1 /* Pods-WScanner.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WScanner/Pods-WScanner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WScanner/Pods-WScanner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D06A784025F8033DD359DE587B8DF28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC90F00A317D5AF1161917F928618B27 /* SVProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EFB06EDB59490E2FEDE6A5FAA05DE6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E14B98483EAD3EC5A29B9909CC3A9A87 /* WeScan.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WeScan/WeScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WeScan/WeScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WeScan/WeScan.modulemap";
+				PRODUCT_MODULE_NAME = WeScan;
+				PRODUCT_NAME = WeScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF6A1AEC63ECDA0E071577BCCF991781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A42D73E671E2A190EA42A56D92D102 /* Pods-WScannerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WScannerTests/Pods-WScannerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WScannerTests/Pods-WScannerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C815C3EFF7340875B4F1FCBC20C06882 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9003BD9C91DBAD3C0DDE2F926434D76 /* Pods-WScannerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WScannerTests/Pods-WScannerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WScannerTests/Pods-WScannerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DFE32C2148825856A2678AAE3086B433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75721BD82899B5FD3EB0F422A58C43DD /* Pods-WScanner.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WScanner/Pods-WScanner-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WScanner/Pods-WScanner.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA382EC9CAE1AE5979FFB186AB238D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E9499649D9D78AE0285187BF938AEEF /* WeScan.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WeScan/WeScan-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WeScan/WeScan-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/WeScan/WeScan.modulemap";
+				PRODUCT_MODULE_NAME = WeScan;
+				PRODUCT_NAME = WeScan;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01A19600E889D91EF42C8D22E79679A3 /* Build configuration list for PBXNativeTarget "WeScan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EFB06EDB59490E2FEDE6A5FAA05DE6F /* Debug */,
+				FA382EC9CAE1AE5979FFB186AB238D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5654AF92F6C0E64090E366AAF7512420 /* Build configuration list for PBXNativeTarget "Pods-WScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CEDC686C1ECA50D5CCE0D90BCCC81E /* Debug */,
+				DFE32C2148825856A2678AAE3086B433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C67910906860916A280DEC827368FD4 /* Build configuration list for PBXNativeTarget "Pods-WScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C815C3EFF7340875B4F1FCBC20C06882 /* Debug */,
+				AF6A1AEC63ECDA0E071577BCCF991781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D06A784025F8033DD359DE587B8DF28 /* Debug */,
+				2523392A09D6E826DD64976C0C445393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B4839C237220B6DF81AACCDBA9999C /* Build configuration list for PBXNativeTarget "Pods-WScanner-WScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2860B597E9D07FAEB86E6D017FBE4336 /* Debug */,
+				1D1B73008A4CC237CFA042834DC54EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,20 @@
+PODS:
+  - SVProgressHUD (2.2.5)
+  - WeScan (1.7.0)
+
+DEPENDENCIES:
+  - SVProgressHUD
+  - WeScan (>= 0.9)
+
+SPEC REPOS:
+  trunk:
+    - SVProgressHUD
+    - WeScan
+
+SPEC CHECKSUMS:
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  WeScan: fed582f6c38014d529afb5aa9ffd1bad38fc72b7
+
+PODFILE CHECKSUM: eb03dd694c1591af6037f0eab3f4b249a5c7c64a
+
+COCOAPODS: 1.10.0
