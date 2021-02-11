@@ -162,7 +162,6 @@ class HomeVC: UIViewController, ImageScannerControllerDelegate, UIImagePickerCon
         let result = formatter.string(from: date)
         print("File Name"+result)
         
-        
         let alertController = UIAlertController(title: "Enter File Name", message: "", preferredStyle: UIAlertController.Style.alert)
         alertController.addTextField { (textField : UITextField!) -> Void in
             textField.placeholder = "Enter File Name*"
@@ -435,8 +434,17 @@ class HomeVC: UIViewController, ImageScannerControllerDelegate, UIImagePickerCon
     //MARK:- Action Methods
     
     @objc func btnAddTap(_ sender : UIButton){
-        let actionSheet = UIAlertController(title: "Would you like to scan an image or select one from your photo library?", message: nil, preferredStyle: .actionSheet)
         
+        var alertStyle = UIAlertController.Style.actionSheet
+        if (UIDevice.current.userInterfaceIdiom == .pad) {
+          alertStyle = UIAlertController.Style.alert
+        }else{
+            alertStyle = UIAlertController.Style.actionSheet
+        }
+        
+        let actionSheet = UIAlertController(title: "Would you like to scan an image or select one from your photo library?", message: nil, preferredStyle: alertStyle)
+        
+       
         let scanAction = UIAlertAction(title: "Scan", style: .default) { (_) in
             self.scanImage()
         }
@@ -471,7 +479,14 @@ class HomeVC: UIViewController, ImageScannerControllerDelegate, UIImagePickerCon
             
         }else{
         
-            let actionSheet = UIAlertController(title: "Select Your Suitable Option for Download Document", message: nil, preferredStyle: .actionSheet)
+            var alertStyle = UIAlertController.Style.actionSheet
+            if (UIDevice.current.userInterfaceIdiom == .pad) {
+              alertStyle = UIAlertController.Style.alert
+            }else{
+                alertStyle = UIAlertController.Style.actionSheet
+            }
+            
+            let actionSheet = UIAlertController(title: "Select Your Suitable Option for Download Document", message: nil, preferredStyle: alertStyle)
             
             let scanAction = UIAlertAction(title: "Image", style: .default) { (_) in
                 

@@ -244,6 +244,10 @@ class MyFilesVC: UIViewController, UICollectionViewDataSource, UICollectionViewD
 
         let data = try! Data(contentsOf: pdfURL)
         let activityVC = UIActivityViewController(activityItems: [data as Any], applicationActivities: nil)
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            activityVC.popoverPresentationController?.sourceView = self.view
+            activityVC.popoverPresentationController?.sourceRect = sender.frame
+        }
         self.present(activityVC, animated: true, completion: nil)
     }
     
